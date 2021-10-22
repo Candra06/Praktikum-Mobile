@@ -23,17 +23,16 @@ class _Page1State extends State<Page1> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            InkWell(
-              
-                onTap: () {
-                  var data = {'asal': '1', 'ke': '2'};
-                  Navigator.pushNamed(context, Routes.PAGE2, arguments: data);
-                },
-                child: Text('Ini Page 1, klik button untuk navigasi ke Page 2')),
+            // InkWell(
+
+            //     onTap: () {
+            //       var data = {'asal': '1', 'ke': '2'};
+            //       Navigator.pushNamed(context, Routes.PAGE2, arguments: data);
+            //     },
+            //     child: Text('Ini Page 1, klik button untuk navigasi ke Page 2')),
             ElevatedButton(
                 onPressed: () {
-                  var data = {'asal': '1', 'ke': '2'};
-                  Navigator.pushNamed(context, Routes.PAGE1, arguments: data);
+                  Navigator.pushNamed(context, Routes.EXAMPLE);
                 },
                 child: Text('Ke Page 2'))
           ],

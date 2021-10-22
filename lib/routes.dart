@@ -1,3 +1,4 @@
+import 'package:belajar_flutter/example.dart';
 import 'package:belajar_flutter/page1.dart';
 import 'package:belajar_flutter/page2.dart';
 import 'package:flutter/widgets.dart';
@@ -6,11 +7,14 @@ import 'package:flutter/material.dart';
 class Routes {
   static const String PAGE1 = '/page1';
   static const String PAGE2 = '/page2';
+  static const String EXAMPLE = '/example';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case PAGE1:
         return MaterialPageRoute(builder: (_) => Page1());
+      case EXAMPLE:
+        return MaterialPageRoute(builder: (_) => ExamplePage());
       case PAGE2:
         Map<String, dynamic> data = settings.arguments;
         print(data);
